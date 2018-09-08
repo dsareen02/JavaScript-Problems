@@ -1,0 +1,14 @@
+You will be deciphering a given message. It is encrypted with a Caesar Cipher (https://en.wikipedia.org/wiki/Caesar_cipher) that increases by 2 after every 3 characters (including symbol characters, which are not encoded), starting at key = 5. You should save this message to a file using a text editor. Then, your program will prompt the user for the name of the file, decrypt the message stored in the file, and then write the decrypted message to a new file called solution.txt.
+
+A sample message talking about getting 5 points of extra credit appears below:
+
+Htsnyhcdjwlevbah! Pfl zxo afsb dwusb srnsyz!
+(We may try other sample messages when we test your program.)
+
+HINTS:
+
+Make sure your key does not exceed 26, the number of letters in the alphabet. Consider using modulo division to help.
+Make sure you "roll" around the alphabet correctly. For example, if the input letter is "D" and the key is currently 5, subtracting 5 from D's code would result in you being 1 before A (64). You should add back the code for the letter Z to roll to the end of the alphabet.
+For JavaScript/TypeScript coders: You can convert letters to their numerical equivalent numbers by using String.fromCharCode(...) and String.charCodeAt(...). For example, String.fromCharCode(65) produces 'A' and 'A'.charCodeAt(0) produces 65.
+For coders in other languages: You can do math directly with letters, such as 'D' - 'A'.
+Note: You must not submit your "node_modules" folder if you are working on NodeJs/JavaScript. (Just submit your JavaScript source code and package.json file)
