@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "build": "command to build your code here",
+        "start": "node lab1fizzbuzz.js"
+    },
+    "dependencies": {
+        "npm": "^6.4.1"
+    }
+}
